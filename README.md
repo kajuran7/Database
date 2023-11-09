@@ -5,11 +5,13 @@
 test> use movies
 switched to db movies
 movies>
+
 ```
 
 **2.Create a collection called moviedetails.**
 
 ```
+movies>
  db.createCollection("moviedetails")
 { ok: 1 }
 
@@ -35,6 +37,7 @@ movies> db.MovieDetails.insertMany([
     '4': ObjectId("654c8a3fa3760b71c6a0b0d9")
   }
 }
+
 ```
 **4.List all documents created.**
 
@@ -103,8 +106,8 @@ movies> db.MovieDetails.find({ "Release Year": "2009" })
     'Release Year': '2009'
   }
 ]
-```
 
+```
 **7.Delete the movie which you don’t like.**
 ```
 movies> db.MovieDetails.remove({"Movie-Title": "Forrest Gump", "Genre": "Drama", "Director": "Robert Zemeckis", "Release Year": "1994" })
