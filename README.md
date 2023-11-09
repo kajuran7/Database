@@ -91,7 +91,7 @@ movies> db.MovieDetails.findOne({ "Director": "James Cameron" })
 }
 ```
 **6.List  James Cameron’s movies released in 2009.**
-``
+```
 movies> db.MovieDetails.find({ "Release Year": "2009" })
 [
   {
@@ -102,13 +102,15 @@ movies> db.MovieDetails.find({ "Release Year": "2009" })
     'Release Year': '2009'
   }
 ]
-``
+```
+
 **7.Delete the movie which you don’t like.**
 ``
 movies> db.MovieDetails.remove({"Movie-Title": "Forrest Gump", "Genre": "Drama", "Director": "Robert Zemeckis", "Release Year": "1994" })
 DeprecationWarning: Collection.remove() is deprecated. Use deleteOne, deleteMany, findOneAndDelete, or bulkWrite.
 { acknowledged: true, deletedCount: 1 }
 ``
+
 **8.Add the movie which is your favourite.**
 ```
 movies> db.MovieDetails.insertOne({"Movie-Title": "Leo", "Genre": "Action", "Director": "Lokesh Kanakaraj", "Release Year": "2023"})
