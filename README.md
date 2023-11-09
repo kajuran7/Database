@@ -34,8 +34,10 @@ movies> db.MovieDetails.insertMany([
     '4': ObjectId("654c8a3fa3760b71c6a0b0d9")
   }
 }
-
+```
 **4.List all documents created.**
+
+```
 movies> db.MovieDetails.find()
 [
   {
@@ -73,10 +75,11 @@ movies> db.MovieDetails.find()
     Director: 'James Cameron',
     'Release Year': '2009'
   }
-]
+] 
 ```
 
 **5.List James Cameron’s movies.**
+
 ```
 movies> db.MovieDetails.findOne({ "Director": "James Cameron" })
 {
