@@ -105,11 +105,11 @@ movies> db.MovieDetails.find({ "Release Year": "2009" })
 ```
 
 **7.Delete the movie which you don’t like.**
-``
+```
 movies> db.MovieDetails.remove({"Movie-Title": "Forrest Gump", "Genre": "Drama", "Director": "Robert Zemeckis", "Release Year": "1994" })
 DeprecationWarning: Collection.remove() is deprecated. Use deleteOne, deleteMany, findOneAndDelete, or bulkWrite.
 { acknowledged: true, deletedCount: 1 }
-``
+```
 
 **8.Add the movie which is your favourite.**
 ```
