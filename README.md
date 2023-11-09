@@ -9,9 +9,9 @@ movies>
 
 **2.Create a collection called moviedetails.**
 
-movies> db.createCollection("moviedetails")
+```movies> db.createCollection("moviedetails")
 { ok: 1 }
-movies> 
+movies> ```
 
 **3.Create above 5 movie documents into a moviedetails collection.**
 
