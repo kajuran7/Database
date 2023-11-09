@@ -9,21 +9,22 @@ movies>
 
 **2.Create a collection called moviedetails.**
 
-```> db.createCollection("moviedetails")
+```
+ db.createCollection("moviedetails")
 { ok: 1 }
-movies>
+
 ```
 
 **3.Create above 5 movie documents into a moviedetails collection.**
 
 ```
 movies> db.MovieDetails.insertMany([
-...     {"Movie-Title": "Jurassic Park", "Genre": "Adventure", "Director": "Steven Spielberg", "Release Year": "1993"},
-...     {"Movie-Title": "Forrest Gump", "Genre": "Drama", "Director": "Robert Zemeckis", "Release Year": "1994"},
-...     {"Movie-Title": "Titanic", "Genre": "Romance", "Director": "James Cameron", "Release Year": "1997"},
-...     {"Movie-Title": "The Dark Knight", "Genre": "Action", "Director": "Christopher Nolan", "Release Year": "2008"},
-...     {"Movie-Title": "Avatar", "Genre": "Science Fiction", "Director": "James Cameron", "Release Year": "2009"}
-... ])
+ {"Movie-Title": "Jurassic Park", "Genre": "Adventure", "Director": "Steven Spielberg", "Release Year": "1993"},
+{"Movie-Title": "Forrest Gump", "Genre": "Drama", "Director": "Robert Zemeckis", "Release Year": "1994"},
+ {"Movie-Title": "Titanic", "Genre": "Romance", "Director": "James Cameron", "Release Year": "1997"},
+{"Movie-Title": "The Dark Knight", "Genre": "Action", "Director": "Christopher Nolan", "Release Year": "2008"},
+ {"Movie-Title": "Avatar", "Genre": "Science Fiction", "Director": "James Cameron", "Release Year": "2009"}
+])
 {
   acknowledged: true,
   insertedIds: {
